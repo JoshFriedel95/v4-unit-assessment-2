@@ -80,7 +80,9 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-//CODE HERE
+const saleProducts = products.map(element => element)
+
+// learn to change a value in a map
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -90,7 +92,13 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-//CODE HERE
+let blueProducts = saleProducts.filter(function(color) {
+  return !saleProducts.includes("blue");
+});
+blueProducts = saleProducts.includes('blue')
+
+// Don't think I did this right but it passed?
+
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -99,7 +107,9 @@ const products = [
   Save the result to a variable called orderTotal.
 */
 
-//CODE HERE
+const orderTotal = blueProducts.reduce((acc, el) => {
+  return acc += el
+})
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -129,7 +139,8 @@ const shippingInfo = {
   that combines the contactInfo and shippingInfo objects.
 */
 
-//CODE HERE
+const helensInfo = Object.assign(contactInfo, shippingInfo)
+// This works in repl but doesnt pass the test, says "helensInfo is not defined"
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -215,7 +226,8 @@ const userInfo = {
   using dot notation.
 */
 
-//CODE HERE
+const shouldAlert = userInfo.settings.alerts
+// Works in repl but not here?
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -223,7 +235,7 @@ const userInfo = {
   using dot and/or bracket notation.
 */
 
-//CODE HERE
+// code here
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -250,7 +262,29 @@ const userInfo = {
       - create at least 2 kid objects
 */
 
-//CODE HERE
+const person = {
+  name: "Josh",
+  age: 25,
+  jobs: ["electrician", "uber", "server"],
+  birthday: function(){
+      return this.birthday +1
+  },
+  favorites: {
+    color: "purple",
+    number: 7,
+    book: "harry potter",
+    kids: [
+      {
+        name: "Liam",
+        age: 1,
+      },
+      {
+        name: "nate",
+        age: 2,
+      }
+    ]
+  }
+}
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -273,10 +307,12 @@ const workout = {
   },
 }
 
-//let context1 = myFunc
-//let context1 = window
-//let context1 = global
-// let context1 = workout
+// let context1 = myFunc
+// let context1 = window
+// let context1 = global
+let context1 = workout
+
+// 95% positive this is right
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +325,8 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
+
+// 98% positive this is right

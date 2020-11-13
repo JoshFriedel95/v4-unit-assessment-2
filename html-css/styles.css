@@ -12,3 +12,177 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header{
+     display: flex;
+    /* position: fixed; */
+    flex-direction: row; 
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(37, 37, 37);
+}
+.left{
+    display: flex;
+    /* position: fixed; */
+    align-items: center;
+    justify-content: left;
+}
+.right{
+    display: flex;
+    position: relative;
+    left: 1100px;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: right; */
+    /* align-content: right; */
+    /* justify-items: right; */
+}
+h1{
+    color: rgb(42, 171, 226);
+}
+.nav-item{
+    display: inline-block;
+    color: white;
+    /* justify-content: right; */
+}
+#p1{
+    padding-right: 50px;
+}
+#p2{
+    padding-left: 50px;
+    padding-right: 70px;
+}
+#p3{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#p4{
+    padding-left: 40px;
+}
+.skill{
+    margin: 200px;
+    font-size: xx-large;
+}
+.text{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text2{
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: cursive;
+}
+.box1{
+    margin: 200px;
+    padding-right: 300px;
+    margin-top: -150px;
+}
+.boxcir{
+    display: flex;
+    position: relative;
+    left: 15vw;
+    border: 1px transparent black;
+    height: 28vh;
+    width: 12vw;
+    float: right;
+    box-shadow: 2px 2px 3px 3px rgb(105, 105, 105);
+    -moz-box-shadow: 2px 2px 3px 3px rgb(105, 105, 105);
+    -webkit-box-shadow: 2px 2px 3px 3px rgb(105, 105, 105);
+}
+.circle{
+    border: 5px solid black;
+    height: 205px;
+    width: 205px;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+.smallcircle{
+    border: 5px solid black;
+    background-color: cyan;
+    width: 75px;
+    height: 75px;
+    border-radius: 70%;
+    margin-left: 57px;
+    margin-top: 40px;
+}
+.medcircle{
+    border: 5px solid black;
+    background-color: cyan;
+    width: 90px;
+    height: 90px;
+    border-radius: 70%;
+    margin-left: 50px;
+    margin-top: -6px;
+    overflow: hidden;
+
+}
+footer{
+    background-color: rgb(42, 171, 226);
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.botleft{
+    /* display: flex; */
+    /* position: fixed; */
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 70%;
+    justify-self: right;
+    margin-left: 1650px;
+}
+.botlefttext{
+    /* display: flex; */
+    /* position: fixed; */
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.gal{
+    display: flex;
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+    font-size: xx-large;
+}
+.butterflyimg{
+    height: 200px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+}
+.larger{
+    margin-bottom: 10px;
+    margin-left: 1650px;
+    color: cyan;
+    font-size: large;
+}
+.box2{
+    float: right;
+    border: 2px solid black;
+    display: flex;
+    position: relative;
+    left: 15vw;
+    height: 28vh;
+    width: 12vw;
+    box-shadow: 2px 2px 3px 3px rgb(105, 105, 105);
+    -moz-box-shadow: 2px 2px 3px 3px rgb(105, 105, 105);
+    -webkit-box-shadow: 2px 2px 3px 3px rgb(105, 105, 105);
+    
+}
+.list{
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: small;
+    margin-left: -150px;
+}
+.pop{
+    margin-left: 50px
+}
+
